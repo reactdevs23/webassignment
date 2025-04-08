@@ -13,12 +13,23 @@
           <h3 class="heading">My News Webpage</h3>
           <input type="text" placeholder="Search..." class="search-container" />
         </div>
-        <div class="nav-items">
-          <a href="/register" class="nav-item">Register </a>
-          <a href="/register" class="nav-item">Login</a>
+
+        <!-- Hamburger Menu -->
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <!-- Nav Items (used for both desktop and mobile) -->
+        <div class="nav-items" id="navItems">
+          <button class="close-btn" id="closeSidebar">&times;</button>
+          <a href="/register" class="nav-item">Register</a>
+          <a href="/login" class="nav-item">Login</a>
+          <div class="login-as">
+            <div class="circle"></div>
+            <p class="as">As</p>
+          </div>
         </div>
       </nav>
     </header>
+
     <main class="container">
       <section class="wrapper">
         <div class="hero-container">
@@ -383,5 +394,6 @@
       </section>
     </footer>
     <!-- end footer -->
+    <script src="script.js"></script>
   </body>
 </html>
