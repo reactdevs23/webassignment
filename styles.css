@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+/* common styles for all */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --Bg-color: #d3d3d3;
+  --Primary-color: #000;
+  --Secondary-color: #b6c7d4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.container {
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+button:hover {
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+body {
+  font-family: sans-serif;
+  background-color: var(--Bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.container {
+  max-width: 1199px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+hr {
+  color: var(--Primary-color);
+}
+.header {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  border-bottom: 1px solid var(--Primary-color);
+  padding-bottom: 10px;
+}
+.header-bar {
+  width: 10px;
+  background: var(--Primary-color);
+  border-radius: 2px;
+}
+.feature-heading {
+  font-size: 24px;
+  color: var(--Primary-color);
+  font-weight: 700;
+}
+/* navbar */
+.main-header {
+  border-bottom: 1px solid var(--Primary-color);
+  padding: 12px 0;
+  background: var(--Bg-color);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-right: 10px;
+  border-right: 1px solid var(--Primary-color);
+  width: 100%;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-item {
+  font-size: 16px;
+  color: var(--Primary-color);
+}
+.search-container {
+  border-radius: 8px;
+  background: var(--Secondary-color);
+  padding: 12px 10px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+/* hero section */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.wrapper {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 250px;
+  gap: 50px;
+}
+.banner {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+.title {
+  font-size: 24px;
+  color: var(--Primary-color);
+  font-weight: 700;
+}
+.info {
+  font-size: 14px;
+  color: var(--Primary-color);
+}
+/* start cards section */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card .info {
+  text-align: justify;
+}
+/* start feautres section */
+.feature-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  width: 100%;
+  padding-left: 20px;
+  border-left: 1px solid var(--Primary-color);
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.feature {
+  display: grid;
+  grid-template-columns: 30px auto;
+  gap: 8px;
+  align-items: center;
+}
+.feature .info {
+  font-weight: 500;
+}
+.feature-img {
+  max-width: 30px;
+  border-radius: 8px;
+}
+/* about bangladesh */
+
+.info-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.about-bangladesh {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-bangladesh .header {
+  border: none;
+}
+.about-bangladesh .info {
+  font-weight: 400;
+}
+.feature2 {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+  align-items: center;
+}
+.feature-img {
+  max-width: 50px;
+  border-radius: 8px;
+}
+/* most popular */
+.most-popular,
+.opinion {
+  display: flex;
+
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+.most-popular .header,
+.opinion .header {
+  border: none;
+}
+.most-popular .features,
+.opinion .features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+/* opinion */
+.opinion .feature-img {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+/* footer */
+
+.footer {
+  padding: 20px 0;
+  background: var(--Secondary-color);
+  border-top: 1px solid var(--Primary-color);
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 40px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer-item {
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 18px;
+}
+.copyright {
+  text-align: center;
+  font-weight: 700;
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .feature-container {
+    border: none;
+    padding: 0;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+
+    align-items: start;
+  }
+  .info-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+  .info-wrapper .features,
+  .most-popular .features,
+  .opinion .features {
+    grid-template-columns: 1fr 1fr;
+  }
+  .feature2 {
+    align-items: start;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .info-wrapper .features,
+  .most-popular .features,
+  .opinion .features {
+    grid-template-columns: 1fr;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .cards,
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .features {
+    margin: 0;
+  }
+}
