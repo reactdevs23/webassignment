@@ -11,6 +11,7 @@
   --Primary-color: #000;
   --Secondary-color: #b6c7d4;
   --Purple-color: #b22b2b;
+  --White: #fff;
 }
 h1,
 h2,
@@ -101,7 +102,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  padding: 0 20px;
+  padding: 12px 0px;
 }
 
 .left-side {
@@ -116,7 +117,7 @@ hr {
 
 .search-container {
   border-radius: 8px;
-  background: var(--Secondary-color);
+  background: var(--White);
   padding: 12px 10px;
   border: none;
 }
@@ -359,6 +360,9 @@ hr {
   .feature2 {
     align-items: start;
   }
+  .navbar {
+    align-items: flex-start;
+  }
   .left-side {
     flex-direction: column;
     width: 100%;
@@ -391,9 +395,10 @@ hr {
 
   .hamburger {
     display: block;
+    transform: translateY(-6px);
   }
   .search-container {
-    width: 100%;
+    width: calc(100% + 45px);
   }
   .left-side {
     border: none;
